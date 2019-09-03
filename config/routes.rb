@@ -10,4 +10,8 @@ Rails.application.routes.draw do
     resources :users, only: %i(show edit update destroy)
     get 'users/:id/image_select' => 'users#image_select',as: 'image_select'
   end
+
+  namespace :api, format: 'json' do
+    resources :users, only: %i(show edit update destroy)
+  end
 end
