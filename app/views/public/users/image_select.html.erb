@@ -1,13 +1,13 @@
 <button>送信</button>
+<div id="image_select"></div>
 
 
 <script>
-var user = "<%= @user.to_json %>";　// 理想はrubyのインスタンス変数をjsonに変換して、javascriptの変数に格納 => vueのファイルでも読み込める！
-
+var user = <%= @user.to_json.html_safe %>;　
 // var user_id = "<%= @user.id %>%";文字列で渡すとカラムごとに変数定義しなくちゃなのでめんどい
 </script>
-
-<div id="image_select"></div>
 <%= javascript_pack_tag 'users/image_select' %>
+
+
 
 <%# binding.pry %>

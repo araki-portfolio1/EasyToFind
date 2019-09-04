@@ -15,13 +15,6 @@
 </template>
 
 <script>
-// export default {
-//   data: function() {
-//     return {
-//       userInfo: user
-//     };
-//   }
-// };
 </script>
 
 <style></style>
